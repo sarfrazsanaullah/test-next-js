@@ -1,15 +1,15 @@
 import React from 'react';
 
 function ReptileList() {
-  const reptiles = ["Red", "Black", "Yellow", "White", "Orange"];
+    const reptiles = ['Green', 'Red', 'Purple', "Yellow", "Orange", "White"];
 
-  return (
-    <ol>
-      {reptiles.map((reptile) => (
-        <li>{reptile}</li>
-      ))}
-    </ol>
-  );
+    return (
+      <ol>
+        {reptiles.map(reptile => (
+          <li key={reptile}>{reptile}</li>
+        ))}
+      </ol>
+    );
 }
-
 export default ReptileList;
+
